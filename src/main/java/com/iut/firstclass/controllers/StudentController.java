@@ -33,7 +33,7 @@ public class StudentController {
         return studentService.save(student);
     }
 
-    @GetMapping("/getStudentID")
+    @GetMapping("/getStudentById")
     public Student getStudentID(@RequestParam("id") Long id) {
         return studentService.findById(id);
     }
